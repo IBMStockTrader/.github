@@ -4,7 +4,7 @@ It originally ran in the (now-defunct) *IBM Cloud Private* product as its Kube i
 
 This diagram shows how the microservices fit together, and what external services (databases, messaging products, API/function services, etc.) they utilize.  Note that only the ones with a solid border are mandatory - the rest are all optional, only installed when you want to enable additional bells and whistles.
 
-![Architectural Diagram](stock-trader.png)
+![Architectural Diagram](https://raw.githubusercontent.com/IBMStockTrader/stocktrader-operator/master/images/stock-trader.png)
 
 A composite operator for the application as a whole exists, in the *stocktrader-operator* repo.  See its readme for information on how to install the operator into your cluster's OperatorHub, how to deploy the operator from there, and how to create an instance of the *StockTrader* CRD that it manages, and then how to run the application.  See each microservice's repository readme for details about what each does.
 
